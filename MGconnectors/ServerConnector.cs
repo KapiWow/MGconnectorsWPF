@@ -10,7 +10,7 @@ namespace MGconnectors
     class ServerConnector
     {
         private TcpListener serverListener;
-        private UdpClient broadcastingClient = new UdpClient(10408);
+        private UdpClient broadcastingClient;
         private System.Net.IPAddress broadcastIp;
         private System.Net.IPAddress serverIp;
         private newClientDelegate callback;
